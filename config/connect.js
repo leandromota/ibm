@@ -22,5 +22,3 @@ const Users = sequelize.define('ibm_users', {
     id: {type: Sequelize.INTEGER, primaryKey: true},
     name: {type: Sequelize.STRING}
 }, {timestamps: false})
-
-Books.findAll().then(result => console.log(result));
