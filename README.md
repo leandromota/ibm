@@ -6,10 +6,11 @@ Acesse em seu navegador:
 > localhost:3000
 
 # Endpoints disponíveis
-> /book/by-title/:title
-> /book/by-author/:author
-> /user/by-name/:name
-
+```sh
+/book/by-title/:title
+/book/by-author/:author
+/user/by-name/:name
+```
 
 #Banco de dados
 
