@@ -1,4 +1,5 @@
 const Sequelize = require('sequelize');
+const Op = Sequelize.Op;
 const sequelize = new Sequelize('lirollajr53', 'lirollajr53', 'Pw@senh4', {
     host: '179.188.16.118',
     dialect: 'mysql',
@@ -14,7 +15,7 @@ const sequelize = new Sequelize('lirollajr53', 'lirollajr53', 'Pw@senh4', {
 
 const Books = sequelize.define('ibm_books', {
     id: {type: Sequelize.INTEGER, primaryKey: true},
-    name: {type: Sequelize.STRING},
+    title: {type: Sequelize.STRING},
     author: {type: Sequelize.STRING}
 }, {timestamps: false})
 
@@ -22,3 +23,9 @@ const Users = sequelize.define('ibm_users', {
     id: {type: Sequelize.INTEGER, primaryKey: true},
     name: {type: Sequelize.STRING}
 }, {timestamps: false})
+
+module.exports = {
+    Books,
+    Users,
+    Op
+}
